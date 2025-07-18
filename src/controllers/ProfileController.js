@@ -1,5 +1,5 @@
 var jwt = require("jsonwebtoken");
-const profileModel = require("../models/profileModel");
+const profileModel = require("../Models/profileModel");
 
 // Create Profile
 exports.CreateProfile = (req, res) => {

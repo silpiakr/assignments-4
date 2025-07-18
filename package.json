@@ -1,18 +1,31 @@
 {
-  "name": "assignments-4",
+  "name": "core__expressjs",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
-    "dotenv": "^17.2.0",
-    "express": "^5.1.0"
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.4.0",
+    "helmet": "^5.1.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.6",
+    "multer": "^1.4.5-lts.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.16",
+    "validator": "^13.7.0",
+    "xss-clean": "^0.1.1"
   }
 }

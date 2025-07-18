@@ -1,14 +1,17 @@
 // index.js
 const express = require('express');
+const router = require('./src/Routes/Api');
+const messageRouter = require('./src/Routes/Api');
 const app = express();
-const messageRoutes = require('./routes/messageRoutes');
+// const messageRoutes = require('./routes/messageRoutes');
 
 const port = process.env.PORT || 5000;
 
 app.use(express.json());
 
 // Route setup
-app.use('/message', messageRoutes);
+app.use('/message', router);
+app.use('/message', messageRouter);
 
 // GET route
 app.get('/', (req, res) => {

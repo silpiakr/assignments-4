@@ -1,9 +1,8 @@
 const express = require("express");
 const ProfileController = require("../Controllers/ProfileController");
-const TodoListController = require("../Controllers/ToDoListController");
 const AuthVerifyToken = require("../Middleware/AuthVerifyToken");
 const router = express.Router();
-const { getMessage, postMessage } = require('../controllers/messageController');
+const { getMessage, postMessage } = require('../Controllers/messageController');
 
 router.get('/', getMessage);
 router.post('/', postMessage);
